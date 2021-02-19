@@ -1,4 +1,9 @@
 function random_choice(){
+    for(const element of document.querySelectorAll('.animate')){
+        element.style.animation = 'none';
+        element.offsetHeight; //trigger update
+        element.style.animation = '';
+    }
     let yes = document.querySelector('.yes');
     let no = document.querySelector('.no');
     yes.style.display = '';

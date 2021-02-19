@@ -18,6 +18,28 @@ html, body{
     font-size: 10em;
     font-family: consolas;
     user-select: none;
+    transition: opacity 0.2s linear;
+}
+
+.yes p, .no p{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.animate{
+    animation: slide_down 1s normal;
+}
+
+@keyframes slide_down{
+    from {
+        top: 0px;
+        transform: translatey(-100%);
+    }
+    to {
+        top: 50%;
+        transform: translatey(-50%);
+    }
 }
 
 .yes{
