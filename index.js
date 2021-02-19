@@ -1,11 +1,12 @@
+let yes = document.querySelector('.yes');
+let no = document.querySelector('.no');
+let animation_list = document.querySelectorAll('.animate');
 function random_choice(){
-    for(const element of document.querySelectorAll('.animate')){
+    for(const element of animation_list){
         element.style.animation = 'none';
         element.offsetHeight; //trigger update
         element.style.animation = '';
     }
-    let yes = document.querySelector('.yes');
-    let no = document.querySelector('.no');
     yes.style.display = '';
     no.style.display = '';
     if(Math.random() < 0.5)
