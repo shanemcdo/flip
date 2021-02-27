@@ -10,9 +10,15 @@ function GET(name){
 
 const PREFIX = GET('prefix');
 const POSTFIX = GET('postfix');
+const CASE = GET('case');
 
-for(const element of animation_list)
+for(const element of animation_list){
     element.innerHTML = PREFIX + ' ' + element.innerHTML + ' ' + POSTFIX
+    if(CASE === 'upper')
+        element.innerHTML = element.innerHTML.toUpperCase();
+    else if(CASE === 'lower')
+        element.innerHTML = element.innerHTML.toLowerCase();
+}
 
 function random_choice(){
     for(const element of animation_list){
