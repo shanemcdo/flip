@@ -1,6 +1,19 @@
+let animation_list = document.querySelectorAll('.animate');
 let yes = document.querySelector('.yes');
 let no = document.querySelector('.no');
-let animation_list = document.querySelectorAll('.animate');
+
+function GET(name){
+    if(get = new RegExp(name + '=(\\w+)').exec(window.location.search))
+        return get[1];
+    return '';
+}
+
+const PREFIX = GET('prefix');
+const POSTFIX = GET('postfix');
+
+for(const element of animation_list)
+    element.innerHTML = PREFIX + ' ' + element.innerHTML + ' ' + POSTFIX
+
 function random_choice(){
     for(const element of animation_list){
         element.style.animation = 'none';
