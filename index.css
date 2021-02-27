@@ -19,6 +19,7 @@ html, body{
     font-family: consolas;
     user-select: none;
     transition: opacity 0.2s linear;
+    text-align: center;
 }
 
 .yes p, .no p{
