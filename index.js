@@ -2,21 +2,17 @@ let animation_list = document.querySelectorAll('.animate');
 let yes = document.querySelector('.yes');
 let no = document.querySelector('.no');
 
-function GET(name){
-    if(get = new RegExp(name + '=(\\w+)').exec(window.location.search))
-        return get[1];
-    return '';
+let GET = {};
+for(const item of window.location.search.split(/&|\?/).filter(substr => substr)){
+    let [key, val] = item.split('=').map(decodeURIComponent);
+    GET[key] = val;
 }
 
-const PREFIX = GET('prefix');
-const POSTFIX = GET('postfix');
-const CASE = GET('case');
-
 for(const element of animation_list){
-    element.innerHTML = PREFIX + ' ' + element.innerHTML + ' ' + POSTFIX
-    if(CASE === 'upper')
+    element.innerHTML = (GET.prefix ? GET.prefix : '') + ' ' + element.innerHTML + ' ' + (GET.postfix ? GET.postfix : '')
+    if(GET.case === 'upper')
         element.innerHTML = element.innerHTML.toUpperCase();
-    else if(CASE === 'lower')
+    else if(GET.case === 'lower')
         element.innerHTML = element.innerHTML.toLowerCase();
 }
 
