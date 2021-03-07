@@ -14,6 +14,8 @@ for(const element of animation_list){
         element.innerHTML = element.innerHTML.toUpperCase();
     else if(GET.case === 'lower')
         element.innerHTML = element.innerHTML.toLowerCase();
+    element.style.fontSize = GET.fontSize;
+
 }
 
 function random_choice(){
