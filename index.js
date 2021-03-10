@@ -9,13 +9,16 @@ for(const item of window.location.search.split(/&|\?/).filter(substr => substr))
 }
 
 for(const element of animation_list){
+    if(GET.yesText && element.innerHTML == 'Yes')
+        element.innerHTML = GET.yesText;
+    else if(GET.noText && element.innerHTML == 'No')
+        element.innerHTML = GET.noText;
     element.innerHTML = (GET.prefix ? GET.prefix : '') + ' ' + element.innerHTML + ' ' + (GET.postfix ? GET.postfix : '')
     if(GET.case === 'upper')
         element.innerHTML = element.innerHTML.toUpperCase();
     else if(GET.case === 'lower')
         element.innerHTML = element.innerHTML.toLowerCase();
     element.style.fontSize = GET.fontSize;
-
 }
 
 function random_choice(){
