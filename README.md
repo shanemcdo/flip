@@ -16,3 +16,11 @@ Font size of the displayed text.
 This value overwrites the text on the slide that says `Yes`.
 #### noText
 This value overwrites the text on the slide that says `no`.
+#### yesHexFG
+This value will override the hex color for the yes text. Do not include`#`.
+#### yesHexBG
+This value will override the hex color for the yes background. Do not include`#`.
+#### noHexFG
+This value will override the hex color for the no text. Do not include`#`.
+#### noHexBG
+This value will override the hex color for the no background. Do not include`#`.

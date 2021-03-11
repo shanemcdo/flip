@@ -20,6 +20,10 @@ for(const element of animation_list){
         element.innerHTML = element.innerHTML.toLowerCase();
     element.style.fontSize = GET.fontSize;
 }
+yes.style.color = '#' + GET.yesHexFG;
+yes.style.background = '#' + GET.yesHexBG;
+no.style.color = '#' + GET.noHexFG;
+no.style.background = '#' + GET.noHexBG;
 
 function random_choice(){
     for(const element of animation_list){
