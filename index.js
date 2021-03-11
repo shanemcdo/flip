@@ -33,7 +33,7 @@ function random_choice(){
     }
     yes.style.display = '';
     no.style.display = '';
-    if(Math.random() < 0.5)
+    if(GET.rigged == 'no' || Math.random() < 0.5 && !GET.rigged)
         yes.style.display = 'none';
     else
         no.style.display = 'none';

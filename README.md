@@ -5,9 +5,9 @@ you can visit it [here](https://flipyesno.netlify.app)
 
 ## Search string arguments
 #### case
-pass value `upper` to force the case to be all upper and `lower` to force the case to be all lower.
+Pass value `upper` to force the case to be all upper and `lower` to force the case to be all lower.
 #### prefix
-the text that will be displayed before the yes.
+The text that will be displayed before the yes.
 #### postfix
 The text that will be displayed after the yes.
 #### fontSize
@@ -24,3 +24,5 @@ This value will override the hex color for the yes background. Do not include`#`
 This value will override the hex color for the no text. Do not include`#`.
 #### noHexBG
 This value will override the hex color for the no background. Do not include`#`.
+#### rigged
+Pass value `yes` for the flip to always be yes and pass value `no` for flip to always be no
