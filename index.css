@@ -51,6 +51,53 @@ html, body{
     background: red;
 }
 
+.help{
+    --BG: #555;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: var(--BG);
+    border-radius: 12px;
+}
+
+.help-icon{
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.help-menu{
+    display: none;
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+.help-menu h2{
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+}
+
+.help-menu h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+
+.help-menu p{
+    margin: 0.1rem;
+}
+
+.help-menu code{
+    color: #99f;
+}
+
+.help:hover .help-icon{
+    display: none;
+}
+
+.help:hover .help-menu{
+    display: block;
+}
+
 @media only screen and (max-width: 667px){
     .yes p, .no p{
         font-size: 8rem;

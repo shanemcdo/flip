@@ -4,6 +4,7 @@
         <title>Should I?</title>
         <link href="index.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
+        <script src="index.js" defer></script>
     </head>
     <body>
         <div class="yes">
@@ -12,6 +13,33 @@
         <div class="no">
             <p class="animate">No</p>
         </div>
-        <script src="index.js"></script>
+        <div class=help>
+            <div class=help-icon>?</div>
+            <div class=help-menu>
+                <h2>Search string arguments</h2>
+                <h3><code>case</code></h3>
+                <p>Pass value <code>upper</code> to force the case to be all upper and <code>lower</code> to force the case to be all lower.</p>
+                <h3><code>prefix</code></h3>
+                <p>The text that will be displayed before the yes.</p>
+                <h3><code>postfix</code></h3>
+                <p>The text that will be displayed after the yes.</p>
+                <h3><code>fontSize</code></h3>
+                <p>Font size of the displayed text.</p>
+                <h3><code>yesText</code></h3>
+                <p>This value overwrites the text on the slide that says <code>Yes</code>.</p>
+                <h3><code>noText</code></h3>
+                <p>This value overwrites the text on the slide that says <code>no</code>.</p>
+                <h3><code>yesHexFG</code></h3>
+                <p>This value will override the hex color for the yes text. Do not include <code>#</code>.</p>
+                <h3><code>yesHexBG</code></h3>
+                <p>This value will override the hex color for the yes background. Do not include <code>#</code>.</p>
+                <h3><code>noHexFG</code></h3>
+                <p>This value will override the hex color for the no text. Do not include <code>#</code>.</p>
+                <h3><code>noHexBG</code></h3>
+                <p>This value will override the hex color for the no background. Do not include <code>#</code>.</p>
+                <h3><code>rigged</code></h3>
+                <p>Pass value <code>yes</code> for the flip to always be yes and pass value <code>no</code> for flip to always be no</p>
+            </div>
+        </div>
     </body>
 </html>
