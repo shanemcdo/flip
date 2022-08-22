@@ -13,7 +13,6 @@ html, body{
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 10em;
     font-family: consolas;
@@ -26,6 +25,8 @@ html, body{
     position: absolute;
     padding: 0;
     margin: 0;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 .animate{
@@ -34,12 +35,10 @@ html, body{
 
 @keyframes slide_down{
     from {
-        top: 0px;
-        transform: translatey(-100%);
+        top: -20%;
     }
     to {
         top: 50%;
-        transform: translatey(-50%);
     }
 }
 
