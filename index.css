@@ -89,6 +89,12 @@
     color: #99f;
 }
 
+.help-menu input,
+.help-menu h3,
+.help-menu p {
+	margin: 0;
+}
+
 .help:hover .help-icon{
     display: none;
 }

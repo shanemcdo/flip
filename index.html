@@ -24,7 +24,11 @@
 						<h3><code>case</code></h3>
 						<p>Pass value <code>upper</code> to force the case to be all upper and <code>lower</code> to force the case to be all lower.</p>
 					</label>
-					<input type="text" value="" name="case" id="case"/>
+					<select name="case" id="case">
+						<option value=""></option>
+						<option value="upper">upper</option>
+						<option value="lower">lower</option>
+					</select>
 					<label for="prefix">
 						<h3><code>prefix</code></h3>
 						<p>The text that will be displayed before the yes.</p>
@@ -74,9 +78,14 @@
 						<h3><code>rigged</code></h3>
 						<p>Pass value <code>yes</code> for the flip to always be yes and pass value <code>no</code> for flip to always be no</p>
 					</label>
-					<input type="text" value="" name="rigged" id="rigged"/>
+					<select name="rigged" id="rigged">
+						<option value=""></option>
+						<option value="yes">yes</option>
+						<option value="no">no</option>
+					</select>
 					<br>
-					<button>Submit</button>
+					<button type="submit">Submit</button>
+					<a href="./" ><button>Clear</button></a>
 				</form>
 			</div>
 		</div>
