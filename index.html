@@ -7,38 +7,77 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <div class="yes">
-            <p class="animate">Yes</p>
-        </div>
-        <div class="no">
-            <p class="animate">No</p>
-        </div>
+		<div id="wrapper">
+			<div class="yes">
+			<p class="animate">Yes</p>
+			</div>
+			<div class="no">
+			<p class="animate">No</p>
+			</div>
+		</div>
         <div class=help>
             <div class=help-icon>?</div>
             <div class=help-menu>
-                <h2>Search string arguments</h2>
-                <h3><code>case</code></h3>
-                <p>Pass value <code>upper</code> to force the case to be all upper and <code>lower</code> to force the case to be all lower.</p>
-                <h3><code>prefix</code></h3>
-                <p>The text that will be displayed before the yes.</p>
-                <h3><code>postfix</code></h3>
-                <p>The text that will be displayed after the yes.</p>
-                <h3><code>fontSize</code></h3>
-                <p>Font size of the displayed text.</p>
-                <h3><code>yesText</code></h3>
-                <p>This value overwrites the text on the slide that says <code>Yes</code>.</p>
-                <h3><code>noText</code></h3>
-                <p>This value overwrites the text on the slide that says <code>no</code>.</p>
-                <h3><code>yesHexFG</code></h3>
-                <p>This value will override the hex color for the yes text. Do not include <code>#</code>.</p>
-                <h3><code>yesHexBG</code></h3>
-                <p>This value will override the hex color for the yes background. Do not include <code>#</code>.</p>
-                <h3><code>noHexFG</code></h3>
-                <p>This value will override the hex color for the no text. Do not include <code>#</code>.</p>
-                <h3><code>noHexBG</code></h3>
-                <p>This value will override the hex color for the no background. Do not include <code>#</code>.</p>
-                <h3><code>rigged</code></h3>
-                <p>Pass value <code>yes</code> for the flip to always be yes and pass value <code>no</code> for flip to always be no</p>
+				<form action="./" method="get" accept-charset="utf-8">
+					<h2>Search string arguments</h2>
+					<label for="case">
+						<h3><code>case</code></h3>
+						<p>Pass value <code>upper</code> to force the case to be all upper and <code>lower</code> to force the case to be all lower.</p>
+					</label>
+					<input type="text" value="" name="case" id="case"/>
+					<label for="prefix">
+						<h3><code>prefix</code></h3>
+						<p>The text that will be displayed before the yes.</p>
+					</label>
+					<input type="text" value="" name="prefix" id="prefix"/>
+					<label for="postfix">
+						<h3><code>postfix</code></h3>
+						<p>The text that will be displayed after the yes.</p>
+					</label>
+					<input type="text" value="" name="postfix" id="postfix"/>
+					<label for="fontSize">
+						<h3><code>fontSize</code></h3>
+						<p>Font size of the displayed text.</p>
+					</label>
+					<input type="text" value="" name="fontSize" id="fontSize"/>
+					<label for="yesText">
+						<h3><code>yesText</code></h3>
+						<p>This value overwrites the text on the slide that says <code>Yes</code>.</p>
+					</label>
+					<input type="text" value="" name="yesText" id="yesText"/>
+					<label for="noText">
+						<h3><code>noText</code></h3>
+						<p>This value overwrites the text on the slide that says <code>no</code>.</p>
+					</label>
+					<input type="text" value="" name="noText" id="noText"/>
+					<label for="yesHexFG">
+						<h3><code>yesHexFG</code></h3>
+						<p>This value will override the hex color for the yes text. Do not include <code>#</code>.</p>
+					</label>
+					<input type="text" value="" name="yesHexFG" id="yesHexFG"/>
+					<label for="yesHexBG">
+						<h3><code>yesHexBG</code></h3>
+						<p>This value will override the hex color for the yes background. Do not include <code>#</code>.</p>
+					</label>
+					<input type="text" value="" name="yesHexBG" id="yesHexBG"/>
+					<label for="noHexFG">
+						<h3><code>noHexFG</code></h3>
+						<p>This value will override the hex color for the no text. Do not include <code>#</code>.</p>
+					</label>
+					<input type="text" value="" name="noHexFG" id="noHexFG"/>
+					<label for="noHexBG">
+						<h3><code>noHexBG</code></h3>
+						<p>This value will override the hex color for the no background. Do not include <code>#</code>.</p>
+					</label>
+					<input type="text" value="" name="noHexBG" id="noHexBG"/>
+					<label for="rigged">
+						<h3><code>rigged</code></h3>
+						<p>Pass value <code>yes</code> for the flip to always be yes and pass value <code>no</code> for flip to always be no</p>
+					</label>
+					<input type="text" value="" name="rigged" id="rigged"/>
+					<br>
+					<button>Submit</button>
+				</form>
             </div>
         </div>
     </body>

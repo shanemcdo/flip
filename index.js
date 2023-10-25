@@ -6,6 +6,7 @@ let GET = {};
 for(const item of window.location.search.split(/&|\?/).filter(substr => substr)){
     let [key, val] = item.split('=').map(decodeURIComponent);
     GET[key] = val;
+    document.querySelector('#' + key).value = val;
 }
 
 for(const element of animation_list){
@@ -38,5 +39,5 @@ function random_choice(){
     else
         no.style.display = 'none';
 }
-document.addEventListener('click', random_choice);
+document.querySelector('#wrapper').addEventListener('click', random_choice);
 random_choice();
