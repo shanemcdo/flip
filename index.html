@@ -18,67 +18,56 @@
 		<div class=help>
 			<div class=help-icon>?</div>
 			<div class=help-menu>
-				<form action="./" method="get" accept-charset="utf-8">
-					<h2>Search string arguments</h2>
+				<form action="./" method="get" accept-charset="utf-8" onsubmit="disable_empty_inputs(this);">
+					<h2>Options</h2>
 					<label for="case">
 						<h3><code>case</code></h3>
-						<p>Pass value <code>upper</code> to force the case to be all upper and <code>lower</code> to force the case to be all lower.</p>
 					</label>
-					<select name="case" id="case">
+					<select name="case" id="case" title="Pass value `upper` to force the case to be all upper and `lower` to force the case to be all lower.">
 						<option value=""></option>
 						<option value="upper">upper</option>
 						<option value="lower">lower</option>
 					</select>
 					<label for="prefix">
 						<h3><code>prefix</code></h3>
-						<p>The text that will be displayed before the yes.</p>
 					</label>
-					<input type="text" value="" name="prefix" id="prefix"/>
+					<input type="text" value="" name="prefix" id="prefix" title="The text that will be displayed before the yes."/>
 					<label for="postfix">
 						<h3><code>postfix</code></h3>
-						<p>The text that will be displayed after the yes.</p>
 					</label>
-					<input type="text" value="" name="postfix" id="postfix"/>
+					<input type="text" value="" name="postfix" id="postfix" title="The text that will be displayed after the yes."/>
 					<label for="fontSize">
 						<h3><code>fontSize</code></h3>
-						<p>Font size of the displayed text.</p>
 					</label>
-					<input type="text" value="" name="fontSize" id="fontSize"/>
+					<input type="text" value="" name="fontSize" id="fontSize" title="Font size of the displayed text."/>
 					<label for="yesText">
 						<h3><code>yesText</code></h3>
-						<p>This value overwrites the text on the slide that says <code>Yes</code>.</p>
 					</label>
-					<input type="text" value="" name="yesText" id="yesText"/>
+					<input type="text" value="" name="yesText" id="yesText" title="This value overwrites the text on the slide that says `Yes`."/>
 					<label for="noText">
 						<h3><code>noText</code></h3>
-						<p>This value overwrites the text on the slide that says <code>no</code>.</p>
 					</label>
-					<input type="text" value="" name="noText" id="noText"/>
+					<input type="text" value="" name="noText" id="noText" title="This value overwrites the text on the slide that says `No`."/>
 					<label for="yesHexFG">
 						<h3><code>yesHexFG</code></h3>
-						<p>This value will override the hex color for the yes text.</p>
 					</label>
-					<input type="color" value="#FFFFFF" name="yesHexFG" id="yesHexFG"/>
+					<input type="color" value="#ffffff" data-default-value="#ffffff" name="yesHexFG" id="yesHexFG" title="This value will override the hex color for the yes text."/>
 					<label for="yesHexBG">
 						<h3><code>yesHexBG</code></h3>
-						<p>This value will override the hex color for the yes background.</p>
 					</label>
-					<input type="color" value="#008000" name="yesHexBG" id="yesHexBG"/>
+					<input type="color" value="#008000" data-default-value="#008000" name="yesHexBG" id="yesHexBG" title="This value will override the hex color for the yes background."/>
 					<label for="noHexFG">
 						<h3><code>noHexFG</code></h3>
-						<p>This value will override the hex color for the no text.</p>
 					</label>
-					<input type="color" value="#FFFFFF" name="noHexFG" id="noHexFG"/>
+					<input type="color" value="#ffffff" data-default-value="#ffffff" name="noHexFG" id="noHexFG" title="This value will override the hex color for the no text."/>
 					<label for="noHexBG">
 						<h3><code>noHexBG</code></h3>
-						<p>This value will override the hex color for the no background.</p>
 					</label>
-					<input type="color" value="#FF0000" name="noHexBG" id="noHexBG"/>
+					<input type="color" value="#ff0000" data-default-value="#ff0000" name="noHexBG" id="noHexBG" title="This value will override the hex color for the no background."/>
 					<label for="rigged">
 						<h3><code>rigged</code></h3>
-						<p>Pass value <code>yes</code> for the flip to always be yes and pass value <code>no</code> for flip to always be no</p>
 					</label>
-					<select name="rigged" id="rigged">
+					<select name="rigged" id="rigged" title="Pass value `yes` for the flip to always be yes and pass value `no` for flip to always be no">
 						<option value=""></option>
 						<option value="yes">yes</option>
 						<option value="no">no</option>
