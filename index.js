@@ -3,7 +3,7 @@ let yes = document.querySelector('.yes');
 let no = document.querySelector('.no');
 
 let GET = {};
-for(const item of window.location.search.split(/&|\?/).filter(substr => substr)){
+for(const item of window.location.search.replace(/\+/g, " ").split(/&|\?/).filter(substr => substr)){
     let [key, val] = item.split('=').map(decodeURIComponent);
     GET[key] = val;
     document.querySelector('#' + key).value = val;
