@@ -1,0 +1,39 @@
+html, body, .container{
+    background: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+#options-form{
+    font-size: 0.8rem;
+    padding: 8px;
+	max-height: 95vh;
+	max-width: 50vw;
+	overflow: auto;
+}
+
+#options-form h3{
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+#options-form p{
+    margin: 0.05rem;
+}
+
+#options-form code{
+    color: #99f;
+}
+
